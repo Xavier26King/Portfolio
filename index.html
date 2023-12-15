@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" contents="IE-edge">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Pandey</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="https://kit.fontawesome.com/bd185d0a0f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Screenshot (1).png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closem()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openm()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Developer</p>
+            <h1>Hi, I'm <span>Divyanshu Pandey</span><br>From India</h1>
+        </div>
+    </div>
+</div>  
+
+<!-----------about-------------->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="my2.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About me</h1>
+                <p>
+                    Hello, I'm Divyanshu Pandey, an enthusiastic engineering student currently pursuing my B.Tech degree at IIT Gandhinagar. Passionate about the intersection of technology and creativity, I thrive in the dynamic world of engineering. As a student at IIT Gandhinagar, I have had the privilege of engaging with cutting-edge concepts and collaborating with brilliant minds.This portfolio is a glimpse into my academic and professional endeavors, showcasing my dedication to learning, innovation, and contributing meaningfully to the world of engineering. Explore to discover more about my projects, degree, and the exciting journey that fuels my passion for technology. 
+                </p>
+                <h2>Education</h2>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('degree')">Degree</p>
+                    <p class="tab-links" onclick="opentab('institution')">Insititution</p>
+                    <p class="tab-links" onclick="opentab('year')">Year</p>
+                </div> 
+                <div class="tab-contents active-tab" id="degree">
+                    <ul>
+                        <li><span>B.Tech</span><br>Bachelor of Technology</li>
+                        <li><span>Class XII</span><br>Higher Secondary Education</li>
+                        <li><span>Class X</span><br>Secondary Education</li>
+                </div>
+                <div class="tab-contents" id="institution">
+                    <ul>
+                        <li><span>IIT Gandhinagar</span><br>Indian Institute of Technology Gandhinagar</li>
+                        <li><span>BPS</span><br>Bihar Public School, Buxar</li>
+                        <li><span>DAV</span><br>Dayanand Anglo Vedic Public School, Buxar</li>
+                    </ul>
+                </div>
+                <div class="tab-contents yr" id="year">
+                    <ul>
+                        <li><span>2021 - Present</span><br> </li>
+                        <li><span>2020 - 2021</span><br> </li>
+                        <li><span>2018 - 2019</span><br> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+
+<!-------skills-------->
+<div id="skills">
+    <div class="container">
+        <h1 class="sub-title">My skills</h1>
+        <div class="services-list">
+            <div class="sk">
+                <i class="fa-solid fa-language"></i>
+                <h2>Languages</h2>
+                <ul>
+                    <li>C++</li>
+                    <li>C</li>
+                    <li>Python</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="sk">
+                <i class="fa-solid fa-book-open-reader"></i>
+                <h2>Courses</h2>
+                <ul>
+                    <li>Machine Learning Specialization</li>
+                    <li>The Complete 2023 Web Development Bootcamp</li>
+                    <li>Cryptograpghy</li>
+                    <li>Responsive Website Basics</li>
+                    <li>Responsive Web Design</li>
+                    <li>Web Application Development with JavaScript and MongoDB</li>
+                    <li>Responsive Website Tutorial and Examples</li>
+                </ul>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="sk">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h2>Tools</h2>
+                <ul>
+                    <li>Autodesk Inventor Professional</li>
+                    <li>Fusion 360</li>
+                    <li>ANSYS</li>
+                    <li>LTspice</li>
+                </ul>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------------Project-------------------->
+<div id="project">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="robot.jpg">
+                <div class="layer">
+                    <h3>Robust 2R Manipulator</h3>
+                    <p>Designed and fabricated for experimental testing of control codes. Achieved precise trajectory tracking for the end effector of the manipulator.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>Developed a Spotify Clone using HTML, CSS, and JavaScript to replicate the core functionalities of the popular music streaming platform.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Screenshot 2023-12-15 233017.png">
+                <div class="layer">
+                    <h3>3D modelling of Automatic Rifle</h3>
+                    <p>Designed and executed a comprehensive 3D modelling project aimed at creating a realistic and functional representation of an automatic rifle.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------------------contact-------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-envelope"></i> pandeydivyanshu@iitgn.ac.in</p>
+                <p><i class="fa-solid fa-phone"></i> 8862817550</p>
+                <div class="socail-icons">
+                    <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://facebook.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/divyanshu-pandey-33a780252/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="21110060.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright ©Pandey. Made with Learning</p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var side = document.getElementById("sidemenu");
+    function openm(){
+        side.style.right = "0";
+    }
+    function closem(){
+        side.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw9iCrjPGmlTXjvds0FCcQfxc_9o5jb9VEtOiWYDnr0b--rKkKxnQ9A-EhCKtjiQdhvEw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
