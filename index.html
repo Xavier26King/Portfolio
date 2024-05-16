@@ -40,10 +40,12 @@
             </div>
             <div class="about-col-2">
                 <h1 class="subtitle">About me</h1>
-                <p>
-                    Hello, I'm Divyanshu Pandey, an enthusiastic engineering student currently pursuing my B.Tech degree at IIT Gandhinagar. Passionate about the intersection of technology and creativity, I thrive in the dynamic world of engineering. As a student at IIT Gandhinagar, I have had the privilege of engaging with cutting-edge concepts and collaborating with brilliant minds.This portfolio is a glimpse into my academic and professional endeavors, showcasing my dedication to learning, innovation, and contributing meaningfully to the world of engineering. Explore to discover more about my projects, degree, and the exciting journey that fuels my passion for technology. 
-                </p>
-                <h2>Education</h2>
+                <div class="intro">
+                    <p>
+                        Hello, I'm Divyanshu Pandey, an enthusiastic engineering student currently pursuing my B.Tech degree at IIT Gandhinagar. Passionate about the intersection of technology and creativity, I thrive in the dynamic world of engineering. As a student at IIT Gandhinagar, I have had the privilege of engaging with cutting-edge concepts and collaborating with brilliant minds.This portfolio is a glimpse into my academic and professional endeavors, showcasing my dedication to learning, innovation, and contributing meaningfully to the world of engineering. Explore to discover more about my projects, degree, and the exciting journey that fuels my passion for technology. 
+                    </p>
+                </div>
+                <h2 class="edu">Education</h2>
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('degree')">Degree</p>
                     <p class="tab-links" onclick="opentab('institution')">Insititution</p>
@@ -89,6 +91,7 @@
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>JavaScript</li>
+                    <li>C#</li>
                 </ul>
                 <a href="#">Learn more</a>
             </div>
@@ -100,9 +103,8 @@
                     <li>The Complete 2023 Web Development Bootcamp</li>
                     <li>Cryptograpghy</li>
                     <li>Responsive Website Basics</li>
-                    <li>Responsive Web Design</li>
                     <li>Web Application Development with JavaScript and MongoDB</li>
-                    <li>Responsive Website Tutorial and Examples</li>
+
                 </ul>
                 <a href="#">Learn more</a>
             </div>
@@ -135,19 +137,23 @@
                 </div>
             </div>
             <div class="work">
-                <img src="work-2.png">
+                <img src="hostel.png">
                 <div class="layer">
-                    <h3>Music App</h3>
-                    <p>Developed a Spotify Clone using HTML, CSS, and JavaScript to replicate the core functionalities of the popular music streaming platform.
+                    <h3>Hostel Management Database Webapp</h3>
+                    <p>Created a Hostel Management Database Web Application using Flask, MySQL, HTML, CSS, and
+                        JavaScript, providing comprehensive hostel management solutions.
                     </p>
                     <a href="#"><i class="fa-solid fa-link"></i></a>
                 </div>
             </div>
             <div class="work">
-                <img src="HD-wallpaper-m4a1-gun-rifle.jpg">
+                <img src="top-10-personal-website-templates-1.jpg">
                 <div class="layer">
-                    <h3>3D modelling of Automatic Rifle</h3>
-                    <p>Designed and executed a comprehensive 3D modelling project aimed at creating a realistic and functional representation of an automatic rifle.
+                    <h3>Personal Portfolio Website</h3>
+                    <p>Developed a dynamic personal portfolio website using HTML for structure, CSS for styling, and
+                        JavaScript for interactive elements, showcasing a diverse range of projects and skills. Incorporated interactive elements such as smooth scrolling, transition, and a contact form,
+                        enhancing the user experience and providing a comprehensive overview of my skills and
+                        achievements.
                     </p>
                     <a href="#"><i class="fa-solid fa-link"></i></a>
                 </div>
@@ -211,22 +217,22 @@
     }
 </script>
 <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbw9iCrjPGmlTXjvds0FCcQfxc_9o5jb9VEtOiWYDnr0b--rKkKxnQ9A-EhCKtjiQdhvEw/exec'
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxqqR4WTSLFDe773l6XZ9oQm_2p7o2UAyG7xrS1NlfbC8WC22894qMh6PtdjDOwzjne/exec'
     const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
+    const msg = document.getElementById("msg") 
 
     form.addEventListener('submit', e => {
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
         .then(response => {
-            msg.innerHTML = "Message sent successfully"
-            setTimeout(function(){
-                msg.innerHTML=""
-            },5000)
+            msg.innerHTML = "Thank you for your feedback."
+            setTimeout(function() {
+                msg.innerHTML = ""
+            }, 3000)
             form.reset()
         })
         .catch(error => console.error('Error!', error.message))
     })
-  </script>
+</script>
 </body>
 </html>
